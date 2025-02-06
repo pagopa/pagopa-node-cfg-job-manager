@@ -35,7 +35,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Code Review
-        uses: pagopa/github-actions-template/maven-code-review@v1.8.3
+        uses: pagopa/github-actions-template/maven-code-review@de4ca1ddefb1461c176cc42259e494158b578fe3 # v1.8.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           sonar_token: ${{ secrets.SONAR_TOKEN }}
