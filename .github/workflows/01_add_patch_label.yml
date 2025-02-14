@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Check user labels
         id: check_user_labels
-        uses: actions/github-script@v6.3.3
+        uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0 # v6.3.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -48,7 +48,7 @@ jobs:
 
       - name: Add comment
         if: ${{ steps.check_user_labels.outputs.result == 'true' }}
-        uses: actions/github-script@v6.3.3
+        uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0 # v6.3.3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |

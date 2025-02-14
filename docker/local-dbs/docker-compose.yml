@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   postgres:
-    image: postgres:14
+    image: postgres:14@sha256:b15c8d16c8b9372aacdf7c16cc84687c42b4f161fbb34fee6969ba820f3c2018
     container_name: postgres_nexi
     ports:
       - 5432:5432
